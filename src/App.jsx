@@ -1,4 +1,4 @@
-import Wrapper from "./component/container/Wrapper"
+// import Wrapper from "./component/container/Wrapper"
 import Approutes from "./routes/Approute"
 
 function App() {
@@ -6,10 +6,10 @@ function App() {
 
   return (
     <>
-      <Wrapper >
-        < Approutes />
+      {/* <Wrapper > */}
+      < Approutes />
 
-      </Wrapper>
+      {/* </Wrapper> */}
     </>
   )
 }

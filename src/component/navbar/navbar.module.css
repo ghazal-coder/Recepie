@@ -1,17 +1,18 @@
 li {
     padding-left: 15px;
+
 }
+
+
 
 .navbar {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     justify-self: flex-start;
     align-items: center;
     background-color: rgb(7, 65, 7);
     color: rgb(216, 208, 134);
-
-
-
     width: 100%;
     height: 70px;
 
@@ -20,13 +21,30 @@ li {
 .link {
     display: flex;
     flex-direction: row;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+
     color: black;
     padding: 40px;
     color: rgb(216, 208, 134);
+}
+
+
+
+.searchParofileCart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p {
+        padding-left: 10px;
+        cursor: pointer;
+    }
 
 }
 
-h1 {
-    padding-left: 50px;
+input {
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
 }

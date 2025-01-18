@@ -5,6 +5,7 @@ function Wrapper({ children }) {
     return (
         <div className={style.Wrapper}>
             {children}
+
         </div>
     )
 }

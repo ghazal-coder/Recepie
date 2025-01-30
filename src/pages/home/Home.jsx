@@ -38,6 +38,7 @@ function Home() {
                                 <img src={item.image} alt={item.title} />
                                 <p>title: {item.title}</p>
                                 <p>price: {item.price}</p>
+                                <p></p>
                             </div>
                         ))
                     }

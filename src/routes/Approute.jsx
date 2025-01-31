@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Route, Routes } from "react-router";
 import { routes } from "./Routes.constant";
 

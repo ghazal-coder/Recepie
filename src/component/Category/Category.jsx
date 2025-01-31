@@ -1,8 +1,8 @@
-import React from 'react';
-import style from "./Product.module.css";
+
+import style from "./Category.module.css";
 
 
-function Product({ title, image }) {
+function Category({ title, image}) {
     return (
         <div className={style.product}>
             <img className={style.img} src={image} alt={title} />
@@ -13,4 +13,4 @@ function Product({ title, image }) {
     );
 }
 
-export default Product;
+export default Category;

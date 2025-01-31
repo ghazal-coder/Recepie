@@ -1,0 +1,21 @@
+.Products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+@media (max-width: 1024px) {
+    .Products {
+        justify-content: space-around;
+    }
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+    .Products {
+        flex-direction: column;
+        align-items: center;
+    }
+}

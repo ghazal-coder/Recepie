@@ -1,6 +1,8 @@
-import React from 'react'
+
 import style from "./Header.module.css"
 import image01 from "../../assets/01.png"
+import { Link } from 'react-router-dom'
+
 
 function Header() {
     return (
@@ -12,7 +14,7 @@ function Header() {
                     <div className={style.text}>
                         <h1>Minimal Mens Style</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elitdolor sit,<br /> amet consectetur adipisicing.Dicta voluptas deserunt optio,<br />  vero eos incidunt repellendus. Nihil sit architecto,<br />  ab quisquam ea facere incidunt aspernatur expedita officia providen </p>
-                        <button>Shop Now</button>
+                       <Link to="/products"><button>Shop Now</button></Link> 
                     </div>
                     <img src={image01} />
                 </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import style from "./explore.module.css"
 
 function explore() {

@@ -12,9 +12,10 @@ function Home() {
     return (
         <div className={style.home}>
             <Navbar />
+             <Wrapper> <ImageSlider /></Wrapper>
             <Wrapper><Header /></Wrapper>
             <Wrapper><ProductBox /></Wrapper>
-            <Wrapper> <ImageSlider /></Wrapper>
+        
             <Wrapper><Explore /></Wrapper>
                    
                     <Footer />

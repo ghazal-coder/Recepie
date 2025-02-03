@@ -15,18 +15,8 @@ li {
     color: rgb(216, 208, 134);
     width: 100%;
     height: 70px;
+    z-index: 1100;
 
-}
-
-.link {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    color: black;
-    padding: 40px;
-    color: rgb(216, 208, 134);
 }
 
 
@@ -47,4 +37,72 @@ input {
     border-radius: 5px;
     width: 200px;
     height: 25px;
+}
+
+
+.burgerMenu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: rgb(216, 208, 134);
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+
+.link {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(216, 208, 134);
+
+}
+
+
+@media (max-width: 768px) {
+    .burgerMenu {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: rgb(216, 208, 134);
+        cursor: pointer;
+        z-index: 1200;
+
+        position: relative;
+    }
+
+    input {
+        display: none;
+    }
+
+    .link {
+        display: none;
+
+    }
+
+
+    .showMenu {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(7, 65, 7, 0.95);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+        padding: 15px 0;
+        z-index: 1150;
+    }
+
+    .link li {
+        padding: 10px 0;
+    }
 }

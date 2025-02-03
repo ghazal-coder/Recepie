@@ -11,3 +11,10 @@
     margin-left: 80px;
     padding-top: 120px;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+    }
+
+}

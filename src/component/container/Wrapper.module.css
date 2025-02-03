@@ -1,3 +1,10 @@
 .Wrapper {
     margin: 0px 87px;
 }
+
+@media (max-width: 768px) {
+    .Wrapper {
+        width: 100%;
+    }
+
+}

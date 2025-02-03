@@ -19,3 +19,15 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .slider {
+
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+
+    }
+}

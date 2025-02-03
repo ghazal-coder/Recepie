@@ -12,8 +12,7 @@ function Navbar() {
 
             <h1>E-Commerce </h1>
            
-            <ul className={isOpen ? style.link : style.showMenu}>
-
+         <ul className={isOpen ? `${style.link} ${style.showMenu}` : style.link}>
                 <li><Link to="/" tabIndex="0"> Home </Link></li>
                 <li><Link to="/mensclothes" tabIndex="0">Men</Link> </li>
                 <li><Link to="/jewelry" tabIndex="0">Women</Link></li>

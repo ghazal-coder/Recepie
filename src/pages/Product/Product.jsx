@@ -13,7 +13,7 @@ function Product() {
     useEffect(() => {
         getProduct(id)
             .then((result) => {
-                setProduct(result.data);
+                setProduct(result);
                 setIsLoading(false);
             })
             .catch(() => {
@@ -30,10 +30,12 @@ function Product() {
                 <p>Loading...</p>
              : 
                 <>
-                    <img src={product?.image} alt={product?.title} />
+                    <img src={product?.strMealThumb} alt={product?.strMeal} />
                     <div>
-                    <p>{product?.title}</p>
-                    <p>{product?.price}</p>
+                    <p>{product?.strMeal}</p> <hr />
+                    <p>{product?.strArea}</p> <br />
+                    <p>{product?.strCategory}</p> <br />
+                    <p>{product?.strInstructions}</p>
                     </div>
            
                 </>
@@ -44,6 +46,7 @@ function Product() {
 }
 
 export default Product;
+
 
 
 

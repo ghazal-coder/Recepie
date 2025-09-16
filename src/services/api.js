@@ -1,25 +1,23 @@
-import axios from "axios"
+import axios from "axios";
 
 const client = axios.create({
-    baseURL : "https://fakestoreapi.com"
+  baseURL: "https://www.themealdb.com/api/json/v1/1",
 });
-export async function getApi (){
 
-    const data= await client("/products")
-    return data
+export async function getApi() {
+  const response = await client.get("/filter.php?c=Seafood");
+  return response.data.meals;
 }
 
-export async function getProduct (id){
-    const product =await client (`/products/${id}`)
-    return product
+export async function getProduct(id) {
+  const response = await client.get(`/lookup.php?i=${id}`);
+  return response.data.meals[0];
 }
 
-export async function jewelry (){
-    const jewelry =await client ("/products/category/jewelery")
-    return jewelry
-}
+export async function searchMeals(query) {
+  const response = await client.get(
+    `/search.php?s=${encodeURIComponent(query)}`
+  );
 
-export async function menCategory (){
-    const menClothes = await client ("/products/category/men's%20clothing")
-    return menClothes
+  return response.data.meals || [];
 }

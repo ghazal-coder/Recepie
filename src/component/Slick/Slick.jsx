@@ -2,9 +2,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./Slick.module.css"
-import banner1 from "../../assets/banner1.jpg"
+import banner1 from "../../assets/banner1.webp"
 import banner2 from "../../assets/banner2.jpg"
-import banner3 from "../../assets/banner3.avif"
+import banner3 from "../../assets/banner3.webp"
 
 
 const ImageSlider = () => {
